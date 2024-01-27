@@ -1,0 +1,5 @@
+node_modules
+lib/old/
+package-lock.json
+.vscode
+.DS_Store
