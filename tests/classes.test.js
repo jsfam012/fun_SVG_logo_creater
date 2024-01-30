@@ -1,9 +1,11 @@
+// Import data from lib for testing
 const Square = require("../lib/square")
 const Triangle = require("../lib/triangle")
 const Circle = require("../lib/circle")
 
-describe("Test for Square class", function() {
-    it("should create a Square object with the correct color", function() {
+// Testing for Square
+describe("Test for Square class", function () {
+    it("should create a Square object with the correct color", function () {
         // test value initialization
         const testColor = "blue";
 
@@ -16,7 +18,7 @@ describe("Test for Square class", function() {
     })
 
 
-    it("should render the correct shape code", function() {
+    it("should render the correct shape code", function () {
         // test value initialization
         const testColor = "blue";
 
@@ -29,8 +31,9 @@ describe("Test for Square class", function() {
     })
 })
 
-describe("Test for Triangle class", function() {
-    it("should create a Triangle object with correct color", function() {
+// Testing for Triangle
+describe("Test for Triangle class", function () {
+    it("should create a Triangle object with correct color", function () {
         // test value initialization
         const testColor = "red";
 
@@ -42,7 +45,7 @@ describe("Test for Triangle class", function() {
         expect(newTriangle.color).toBe(testColor)
     })
 
-    it("should render the correct shape code", function() {
+    it("should render the correct shape code", function () {
         //test value initialization
         const testColor = "red";
 
@@ -52,12 +55,13 @@ describe("Test for Triangle class", function() {
 
         // conclusion
         expect(triangleCode).toBe(`<polygon points="100,0 0,200 200,200" fill="${testColor}" />`)
-})
+    })
 
 })
 
-describe("Test for Circle class", function() {
-    it("should create a Circle object with correct color", function() {
+// Testing for Circle 
+describe("Test for Circle class", function () {
+    it("should create a Circle object with correct color", function () {
         // test value initialization
         const testColor = "orange";
 
@@ -69,7 +73,7 @@ describe("Test for Circle class", function() {
         expect(newCircle.color).toBe(testColor)
     })
 
-    it("should render the correct shape code", function() {
+    it("should render the correct shape code", function () {
         //test value initialization
         const testColor = "orange";
 
@@ -79,6 +83,6 @@ describe("Test for Circle class", function() {
 
         // conclusion
         expect(circleCode).toBe(`<circle cx="100" cy="100" r="80" fill="${testColor}" />`)
-})
+    })
 
 })
